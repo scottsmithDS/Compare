@@ -1,47 +1,113 @@
-<!DOCTYPE html>
-<html>
-    <body>
-        <H1>HELLO!</H1>
-        <div class="container">
-            <nav class="navbar">
-              <ul>
-                <li>
-                  <a href="#">Home</a>
-                </li>
-                <li>
-                  <a href="/1/">Visualization Page 1</a>
-                </li>
-                <li>
-                  <a href="/2/">Visualization Page 2</a>
-                </li>
-                <li>
-                  <a href="/3/">Visualization Page 3<span class="sr-only">(</span></a>
-                </li>
-                <li>
-                    <a href="/4/">Visualization Page4</a>
-                </li>
-                <li>
-                    <a href="/5/">Visualizations</a>
-                </li>
-                <li>
-                    <a href="/6/">Comparisons</a>
-                  </li>
-                <li>
-                    <a href="/7/">Data</a>
-                  </li>
-        </div>
-              </ul>
-            </nav>
-            <heaader class="header"></heaader>
-            <main>
-            <section class="posts">
-                <article class="post">
-                  <h3>Web Visualization Project Discription</h3>
-                  <p>For this web design project we will primarily be working with html and css to deploy our Weather Data. This will consist of four different styled pages an dultimately the visualization of our data.
-                  </p>
-                </article>
-            </section>
-            </main>
-        
-    </body>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>WeatherPy</title>
+</head>
+<style>
+  /*
+    NOTE: Commenting is a bit different in CSS. 
+    They start with forward-slash + asterisk 
+    and end with back-slash + asterisk.
+    */
+
+  /* h1 heading tag */
+  h1 {
+    /* Put a 15-pixel margin at the bottom of the heading. */
+    margin-bottom: 15px;
+    /* Change the size of your font to 60 pixels high. */
+    font-size: 60px;
+    /* This will color the heading font white. */
+    color: white;
+    /* Align the text to the center of its enclosing element (e.g. div). */
+    text-align: center;
+    /* Underline the text. */
+    text-decoration: underline;
+    /* The background of the heading element will now be black. */
+    background-color: black;
+  }
+
+  /* h2 heading tags */
+  h2 {
+    /* Put a 15-pixel margin at the top of all h2 headings. */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  /* h3 heading tags */
+  h3 {
+    margin-top: 15px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  /* All img tags */
+  img {
+    /* 
+      Center a block element in the middle of its enclosing tag.
+      When you use the "auto" rule on both left and right margins, 
+      your browser will do the math necessary to center a block element.
+      */
+    margin-left: auto;
+    margin-right: auto;
+    /* Block display (more on this later) */
+    display: block;
+  }
+
+  /* All p tags */
+  p {
+    text-align: center;
+    font-size: 20px;
+    /* Bold the text. */
+    font-weight: bold;
+  }
+
+  /* All unordered list tags */
+  ul {
+    text-align: center;
+    font-size: 35px;
+    /* Give an element a solid border. */
+    border-style: solid;
+    /* Render the border 5 pixels thick. */
+    border-width: 5px;
+    /* Include bullets in the content flow. */
+    /* More info here: http://www.w3schools.com/cssref/pr_list-style-position.asp */
+    list-style-position: inside;
+  }
+</style>
+
+<body>
+  <section>
+    <h1>Latitude & Humidity Correlation</h1>
+    <img src="Lat&Humidity.png" width="400" height='235' alt="Cloudy Map">
+    <p>Interestingly enough there is quite a strong correlation between LAtitude and Humidity</p>
+  </section>
+  <h1>Latitude & Max Temperature Comparison</h1>
+  <article>
+  <p>
+    <img src="Lat&MaxTemp.png" width="400" height='235' alt="Cloudy Map">
+  </p>
+  <p>This is an interesting graph that shows the correlation between Latitude and Humidity</p>
+  </article>
+  <section>
+    <h1>Latitude & Cloud Coverage Correlation</h1>
+    <article>
+    <p>
+      <img src="Lat&Cloudiness.png" width="400" height='235' alt="Cloudy Map">
+    </p>
+    <p>This is an Interesting Graph that shows the correlation between Latitude and Cloudiness. As you can tell there is not much of a correlation</p>
+    </article>
+  </section>
+  <section>
+  <h1>Latitude and Wind Speed Correlation</h1>
+  <article>
+  <p>
+    <img src="Lat&WindSpeed.png" width="400" height='235' alt="Cloudy Map">
+  </p>
+  <p>Wind Speed and Latitude have a very low correlation, however it is still interesting to consider</p>
+  </article>
+  </section>
+</body>
 </html>
